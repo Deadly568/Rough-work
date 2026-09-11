@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Useful Websites</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+
+            background:
+                radial-gradient(circle at 20% 20%, #ff4ecd55, transparent 30%),
+                radial-gradient(circle at 80% 30%, #00e5ff55, transparent 30%),
+                radial-gradient(circle at 50% 90%, #7c4dff66, transparent 35%),
+                linear-gradient(135deg, #0f1020, #17113b, #071b2e);
+
+            background-size: 200% 200%;
+            animation: backgroundMove 10s ease infinite;
+
+            padding-top: 40px;
+        }
+
+        @keyframes backgroundMove {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Flowers */
+        .flowers {
+            font-size: 45px;
+            margin-bottom: 30px;
+            animation: floatFlowers 3s ease-in-out infinite;
+        }
+
+        @keyframes floatFlowers {
+            0%, 100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-12px);
+            }
+        }
+
+        /* Website boxes */
+        h1 {
+            width: 70%;
+            margin: 20px auto;
+            padding: 18px;
+
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 18px;
+
+            backdrop-filter: blur(10px);
+
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+
+            transition: 0.3s;
+        }
+
+        h1:hover {
+            transform: translateY(-5px) scale(1.02);
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 12px 40px rgba(0, 229, 255, 0.25);
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #00e5ff;
+        }
+
+        img {
+            max-width: 100px;
+            max-height: 100px;
+            border-radius: 15px;
+            display: block;
+            margin: 10px auto;
+        }
+
+        small {
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="Emoji">
+        <b><big>Favourite Websites</big></b>
+    </div>
+
+    <h1>
+        YouTube
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBUBQfUCL7bvNw9BjFX-N6KLVB3WmvFPj0MYzxSC4Qjw&s=10">
+        <small>
+            <a href="https://youtube.com" target="_blank">
+                Visit YouTube
+            </a>
+        </small>
+    </h1>
+
+    <h1>
+        Discord
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZD-G7Vj8hF7IEsoJtRQgamcK-sMStrjPGWIpXiZbCtg&s=10">
+        <small>
+            <a href="https://discord.com" target="_blank">
+                Join Discord
+            </a>
+        </small>
+    </h1>
+
+    <h1>
+        Instagram
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx9iCnoWNr47HoCH-oba-jF9imvwKUoq_DAPm7ohNBxQ&s=10">
+        <small>
+            <a href="https://instagram.com" target="_blank">
+                Visit Instagram
+            </a>
+        </small>
+    </h1>
+
+    <h1>
+        Modrinth
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBvv_QyiMbWJl53LtwD_ivckPbA1glpecwgsPjvl9GeofTX-vtMYxniT8&s=10">
+        <small>
+            <a href="https://modrinth.com" target="_blank">
+                Visit Modrinth
+            </a>
+        </small>
+    </h1>
+
+</body>
+
+</html>
